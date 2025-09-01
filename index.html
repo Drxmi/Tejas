@@ -1,217 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tejas Agarbatti - Authentic Indian Incense</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #fff;
-            color: #333;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav ul li {
-            margin-left: 2rem;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .hero {
-            background-image: url('http://googleusercontent.com/image_generation_content/0');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-        }
-        .hero-text {
-            background-color: rgba(0,0,0,0.5);
-            padding: 2rem;
-            border-radius: 10px;
-        }
-        .hero h1 {
-            font-size: 4rem;
-            margin: 0;
-        }
-        .hero p {
-            font-size: 1.5rem;
-        }
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-        .about-content, .global-content {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-        .about-content img, .global-content img {
-            max-width: 50%;
-            border-radius: 10px;
-        }
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        .product-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 1.5rem;
-            text-align: center;
-        }
-        .product-card img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .contact-form input, .contact-form textarea {
-            padding: 1rem;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .contact-form button {
-            padding: 1rem;
-            border-radius: 5px;
-            border: none;
-            background-color: #333;
-            color: #fff;
-            cursor: pointer;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejas – The Fragrance of India</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white text-gray-800 font-sans">
+  
+  <!-- Navbar -->
+  <header class="bg-orange-600 text-white shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold tracking-wide">🌸 Tejas</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#about" class="hover:text-yellow-200">About</a>
+        <a href="#products" class="hover:text-yellow-200">Products</a>
+        <a href="#exports" class="hover:text-yellow-200">Exports</a>
+        <a href="#contact" class="hover:text-yellow-200">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <nav>
-            <div class="logo">Tejas Agarbatti</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#global">Global Reach</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-[80vh]" style="background-image: url('https://images.unsplash.com/photo-1600334129128-8726a92b3b0c?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+      <div class="text-center text-white px-4">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">The Fragrance of India</h2>
+        <p class="text-lg md:text-xl mb-6">Premium Agarbatti & Traditional Scents for the World</p>
+        <a href="#products" class="bg-yellow-500 px-6 py-3 rounded-lg text-black font-semibold hover:bg-yellow-400">Explore Products</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Tejas Agarbatti</h1>
-            <p>Authentic Indian Incense, Delivered Worldwide</p>
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold text-orange-600 mb-6">About Tejas</h3>
+    <p class="text-lg leading-relaxed text-gray-600">
+      Tejas brings the soulful fragrance of Indian traditions to the world. Our hand-rolled incense sticks, dhoop, and natural oils are crafted with purity, heritage, and sustainability.  
+      We proudly export to USA, Japan, and Europe – carrying the spiritual essence of India across the globe.
+    </p>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="bg-gray-50 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-orange-600 text-center mb-10">Our Products</h3>
+      <div class="grid gap-8 md:grid-cols-3">
+        
+        <!-- Product Card -->
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1617196035935-41d546a01b1d?auto=format&fit=crop&w=800&q=80" alt="Agarbatti" class="h-56 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Premium Agarbatti</h4>
+            <p class="text-gray-600 mb-4">Hand-rolled incense sticks with divine fragrance.</p>
+            <a href="#contact" class="text-orange-600 font-semibold hover:underline">Order Now →</a>
+          </div>
         </div>
-    </section>
 
-    <section id="about">
-        <h2 class="section-title">About Us</h2>
-        <div class="about-content">
-            <img src="http://googleusercontent.com/image_generation_content/0" alt="About Tejas Agarbatti">
-            <p>
-                At Tejas Agarbatti, we are dedicated to bringing the authentic scents of India to the world. Our incense is handcrafted using traditional methods and the finest natural ingredients. We believe in quality, and our mission is to provide a product that brings peace and tranquility to your home.
-            </p>
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1616433901668-9cf3e77ec2a3?auto=format&fit=crop&w=800&q=80" alt="Dhoop" class="h-56 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Natural Dhoop</h4>
+            <p class="text-gray-600 mb-4">Traditional Indian dhoop cones for rituals & meditation.</p>
+            <a href="#contact" class="text-orange-600 font-semibold hover:underline">Order Now →</a>
+          </div>
         </div>
-    </section>
 
-    <section id="products">
-        <h2 class="section-title">Our Products</h2>
-        <div class="products-grid">
-            <div class="product-card">
-                <img src="http://googleusercontent.com/image_generation_content/0" alt="Sandalwood Incense">
-                <h3>Sandalwood</h3>
-                <p>A classic, calming scent for meditation and relaxation.</p>
-            </div>
-            <div class="product-card">
-                <img src="http://googleusercontent.com/image_generation_content/0" alt="Rose Incense">
-                <h3>Rose</h3>
-                <p>A sweet, floral aroma to freshen up any space.</p>
-            </div>
-            <div class="product-card">
-                <img src="http://googleusercontent.com/image_generation_content/0" alt="Jasmine Incense">
-                <h3>Jasmine</h3>
-                <p>An exotic and uplifting fragrance for a positive atmosphere.</p>
-            </div>
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1605971677492-85e4c2e5e4d1?auto=format&fit=crop&w=800&q=80" alt="Essential Oils" class="h-56 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Essential Oils</h4>
+            <p class="text-gray-600 mb-4">Pure essential oils for calmness and well-being.</p>
+            <a href="#contact" class="text-orange-600 font-semibold hover:underline">Order Now →</a>
+          </div>
         </div>
-    </section>
 
-    <section id="global">
-        <h2 class="section-title">Global Reach</h2>
-        <div class="global-content">
-            <p>
-                From our home in India to yours, wherever you are in the world. We are proud to export our products globally, ensuring that everyone can enjoy the authentic experience of Tejas Agarbatti. We handle all our shipping with care, so your order arrives safely and on time.
-            </p>
-            <img src="http://googleusercontent.com/image_generation_content/0" alt="Tejas Agarbatti Global Reach">
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message" rows="5"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <!-- Exports -->
+  <section id="exports" class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold text-orange-600 mb-6">Global Exports</h3>
+    <p class="text-lg text-gray-600 mb-6">
+      Tejas proudly exports its products worldwide with trusted partners in:
+    </p>
+    <div class="flex justify-center gap-6 flex-wrap">
+      <span class="bg-gray-100 px-4 py-2 rounded-lg shadow">🇺🇸 USA</span>
+      <span class="bg-gray-100 px-4 py-2 rounded-lg shadow">🇯🇵 Japan</span>
+      <span class="bg-gray-100 px-4 py-2 rounded-lg shadow">🇪🇺 Europe</span>
+      <span class="bg-gray-100 px-4 py-2 rounded-lg shadow">🌍 More Countries</span>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2023 Tejas Agarbatti. All Rights Reserved.</p>
-    </footer>
+  <!-- Contact -->
+  <section id="contact" class="bg-orange-600 text-white py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">Contact & Orders</h3>
+      <p class="mb-6">Want to partner with us or place an order? Reach out today!</p>
+      <a href="mailto:contact@tejas.com" class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300">📩 Email Us</a>
+      <a href="https://wa.me/919999999999" class="ml-4 bg-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-400">💬 WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    <p>© 2025 Tejas – The Fragrance of India | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
